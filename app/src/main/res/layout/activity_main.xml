@@ -10,7 +10,9 @@
         android:id="@+id/GlobalLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/PlayerCountBar"
@@ -20,37 +22,213 @@
             android:layout_marginRight="10dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/Player1Text"
+            <LinearLayout
+                android:id="@+id/Player1Layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Player 1"
-                android:textColor="#000000" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/Player2Text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Player 2"
-                android:textColor="#000000" />
+                <TextView
+                    android:id="@+id/Player1Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Player 1"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
 
-            <TextView
-                android:id="@+id/Player3Text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Player 3"
-                android:textColor="#000000" />
+                <LinearLayout
+                    android:id="@+id/Player1StatsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/Player4Text"
+                    <TextView
+                        android:id="@+id/P1VP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="VP: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/P1KnightCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Knights: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/P1RoadCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Roads: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Player2Layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Player 4"
-                android:textColor="#000000" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Player2Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Player 2"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:id="@+id/Player2StatsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/P2VP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="VP: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/P2KnightCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Knights: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/P2RoadCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Roads: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Player3Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Player3Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Player 3"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:id="@+id/Player3StatsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/P3VP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="VP: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/P3KnightCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Knights: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/P3RoadCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Roads: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Player4Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Player4Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Player 4"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:id="@+id/Player4StatsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/P4VP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="VP: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/P4KnightCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Knights: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/P4RoadCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Roads: 0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -59,36 +237,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:id="@+id/ButtonLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp" />
-
-                <Button
-                    android:id="@+id/BuildButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Build" />
-
-                <Button
-                    android:id="@+id/TradeButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Trade" />
-
-                <Button
-                    android:id="@+id/DevelopButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Develop" />
-            </LinearLayout>
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/BoardLayout"
@@ -99,27 +248,215 @@
                 <SurfaceView
                     android:id="@+id/PlayBoard"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp" />
+                    android:layout_height="500dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PlayerHUD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <LinearLayout
-                    android:id="@+id/CardLayout"
-                    android:layout_width="match_parent"
+                    android:id="@+id/ManageLayout"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="wrap_content"
+                    <Button
+                        android:id="@+id/EndTurnButton"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_launcher_foreground" />
+                        android:text="End Turn"
+                        app:backgroundTint="#870404" />
 
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="wrap_content"
+                    <Button
+                        android:id="@+id/RollButton"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_launcher_foreground" />
+                        android:text="Roll Dice"
+                        app:backgroundTint="#045906" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/PlayerResourceLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ResourceTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resources"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:id="@+id/ResourceImageLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_launcher_foreground" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/DevelopmentLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/DevelopmentTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Development Cards"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:id="@+id/DevelopmentImageLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/DevelopmentCard1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                        <ImageView
+                            android:id="@+id/DevelopmentCard2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                        <ImageView
+                            android:id="@+id/DevelopmentCard3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_launcher_foreground" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/BuildLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/BuildTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Build"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <Button
+                        android:id="@+id/RoadButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Road"
+                        app:backgroundTint="#000000" />
+
+                    <Button
+                        android:id="@+id/SettlementButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Settlement"
+                        app:backgroundTint="#372D70" />
+
+                    <Button
+                        android:id="@+id/CityButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        app:backgroundTint="#B82D49" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TradingLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TradeTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trading"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <Button
+                        android:id="@+id/PlayerTradeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Player Trade"
+                        app:backgroundTint="#0F4A04" />
+
+                    <Button
+                        android:id="@+id/MaritimeTradeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maritime Trade"
+                        app:backgroundTint="#3D585C" />
                 </LinearLayout>
             </LinearLayout>
 
