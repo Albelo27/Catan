@@ -6,10 +6,13 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    public BoardView boardView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        boardView = findViewById(R.id.BoardView);
     }
-    //I am trying to see how to push changes from my machine to the github after initial commit
 }

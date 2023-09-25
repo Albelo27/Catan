@@ -235,27 +235,27 @@
         <LinearLayout
             android:id="@+id/LowerLayout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/BoardLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
-                <SurfaceView
-                    android:id="@+id/PlayBoard"
+                <com.example.catan.BoardView
+                    android:id="@+id/BoardView"
                     android:layout_width="match_parent"
                     android:layout_height="500dp" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/PlayerHUD"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <LinearLayout
